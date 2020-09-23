@@ -1,4 +1,9 @@
+## Project Hollywood
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Check out the repo on IntelliJ
+[Manage projects hosted on GitHub](https://www.jetbrains.com/help/idea/manage-projects-hosted-on-github.html?_ga=2.69084824.804610917.1600823220-62575682.1594089452#clone-from-GitHub)
 
 ## Available Scripts
 
