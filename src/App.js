@@ -1,16 +1,12 @@
-import React from 'react';
-import logo from './hollywood-star.png';
-import './App.css';
+import React from "react";
+import "./App.css";
+import GameContainer from "./containers/GameContainer.js";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="hollywood-star" />
-        <p>
-          Project Hollywood
-        </p>
-      </header>
+      <header className="App-header"></header>
+      <GameContainer />
     </div>
   );
 }
