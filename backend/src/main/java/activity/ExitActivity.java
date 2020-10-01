@@ -1,7 +1,7 @@
-package activity;
+package main.java.activity;
 
-import gameplay.GameOperation;
-import gameplay.GameState;
+import main.java.gameplay.GameOperation;
+import main.java.gameplay.GameState;
 
 import javax.inject.Inject;
 

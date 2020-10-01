@@ -1,10 +1,6 @@
-package gameplay;
+package main.java.gameplay;
 
-import activity.ExitActivity;
-import activity.GameActivity;
-import activity.LoginActivity;
-import activity.StartRoundActivity;
-import activity.SubmitAnswerActivity;
+import main.java.activity.*;
 
 import java.util.HashMap;
 import java.util.Map;

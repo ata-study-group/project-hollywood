@@ -1,4 +1,4 @@
-package activity;
+package main.java.activity;
 
 /**
  * General activity for the Activity classes.

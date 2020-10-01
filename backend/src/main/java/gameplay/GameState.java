@@ -1,6 +1,6 @@
-package gameplay;
+package main.java.gameplay;
 
-import type.Round;
+import main.java.type.Round;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;

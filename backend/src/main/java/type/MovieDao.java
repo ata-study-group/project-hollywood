@@ -1,4 +1,4 @@
-package type;
+package main.java.type;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.module.paranamer.ParanamerModule;

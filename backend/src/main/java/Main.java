@@ -1,12 +1,15 @@
-import activity.ExitActivity;
-import activity.LoginActivity;
-import activity.StartRoundActivity;
-import activity.SubmitAnswerActivity;
-import gameplay.Game;
-import gameplay.GameState;
-import gameplay.InputHandler;
-import type.MovieDao;
-import type.RoundDao;
+package main.java;
+
+
+import main.java.activity.ExitActivity;
+import main.java.activity.LoginActivity;
+import main.java.activity.StartRoundActivity;
+import main.java.activity.SubmitAnswerActivity;
+import main.java.gameplay.Game;
+import main.java.gameplay.GameState;
+import main.java.gameplay.InputHandler;
+import main.java.type.MovieDao;
+import main.java.type.RoundDao;
 
 // TODO: import dagger-compiler library to convert annotated classes to code
 public class Main {

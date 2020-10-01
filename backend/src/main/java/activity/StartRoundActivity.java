@@ -1,12 +1,12 @@
-package activity;
+package main.java.activity;
 
-import gameplay.GameOperation;
-import gameplay.GameState;
-import gameplay.InputHandler;
-import type.Movie;
-import type.MovieDao;
-import type.Round;
-import type.RoundDao;
+import main.java.gameplay.GameOperation;
+import main.java.gameplay.GameState;
+import main.java.gameplay.InputHandler;
+import main.java.type.Movie;
+import main.java.type.MovieDao;
+import main.java.type.Round;
+import main.java.type.RoundDao;
 
 import java.io.IOException;
 import javax.inject.Inject;

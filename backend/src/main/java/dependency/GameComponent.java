@@ -1,7 +1,7 @@
-package dependency;
+package main.java.dependency;
 
 import dagger.Component;
-import gameplay.Game;
+import main.java.gameplay.Game;
 
 import javax.inject.Singleton;
 

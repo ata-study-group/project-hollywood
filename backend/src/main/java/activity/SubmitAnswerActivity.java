@@ -1,11 +1,11 @@
-package activity;
+package main.java.activity;
 
-import gameplay.GameState;
-import gameplay.InputHandler;
-import type.Movie;
-import type.Player;
-import type.Round;
-import type.RoundDao;
+import main.java.gameplay.GameState;
+import main.java.gameplay.InputHandler;
+import main.java.type.Movie;
+import main.java.type.Player;
+import main.java.type.Round;
+import main.java.type.RoundDao;
 
 import javax.inject.Inject;
 
@@ -28,7 +28,7 @@ public class SubmitAnswerActivity implements GameActivity {
         Movie currentMovie = currentRound.getMovie();
         System.out.printf("\nRound %s:\n%s\n",
             roundDao.getRoundNumber() + 1,
-            currentMovie);
+            currentMovie.getTitle().toUpperCase());
 
         for (Player player : currentRound.getPlayers()) {
             String prompt = String.format("\nSubmit answer for %s:", player.getPlayerName());

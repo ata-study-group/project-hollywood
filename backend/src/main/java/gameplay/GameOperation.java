@@ -1,4 +1,4 @@
-package gameplay;
+package main.java.gameplay;
 
 public enum GameOperation {
     LOGIN("Login"),

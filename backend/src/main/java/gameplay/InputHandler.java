@@ -1,4 +1,4 @@
-package gameplay;
+package main.java.gameplay;
 
 import java.io.InputStreamReader;
 import java.math.BigDecimal;

@@ -1,4 +1,4 @@
-package type;
+package main.java.type;
 
 import java.time.ZoneId;
 import java.time.ZonedDateTime;

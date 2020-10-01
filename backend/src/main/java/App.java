@@ -1,5 +1,6 @@
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.module.paranamer.ParanamerModule;
+import main.java.type.Movie;
 
 import java.io.File;
 import java.net.URL;
