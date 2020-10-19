@@ -63,10 +63,19 @@ class GameContainer extends Component {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          "Cache-Control": "no-cache",
+          "User-Agent": "PostmanRuntime/7.26.7",
+          Accept: "*/*",
+          "Accept-Encoding": "gzip, deflate, br",
+          Connection: "keep-alive",
         },
-        body: { movieTitle: this.state.movieTitle },
+        body: JSON.stringify({ movieTitle: this.state.movieTitle }),
       }
-    );
+    )
+      .then((response) => console.log(response))
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   render() {
