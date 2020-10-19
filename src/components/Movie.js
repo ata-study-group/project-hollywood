@@ -9,18 +9,18 @@ class Movie extends Component {
   };
 
   render() {
+    var movie = this.props.movie;
     return (
       <div>
-        <img src={this.props.imageLink} alt={this.props.title} height="350vh" />
-        <h3>{this.props.title}</h3>
+        <img src={movie.poster} alt={movie.title} height="350vh" />
         <p>
-          {this.props.rated} | {this.props.year} | {this.props.country}
+          {movie.rated} | {movie.year} | {movie.country}
         </p>
         <Button onClick={this.showRating} variant="light">
           Click to reveal IMDB Rating
         </Button>
         <p id="imdbRating" style={{ display: "none" }}>
-          IMDB Rating: {this.props.imdbRating}/10
+          IMDB Rating: {movie.imdbRating}/10
         </p>
       </div>
     );
