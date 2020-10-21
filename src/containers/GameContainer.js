@@ -3,6 +3,7 @@ import Movie from "../components/Movie.js";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
+import { axios } from "../axios.js";
 
 class GameContainer extends Component {
   state = {
@@ -53,29 +54,31 @@ class GameContainer extends Component {
     });
   };
 
-  handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("clicked!");
-    fetch(
-      "https://cors-anywhere.herokuapp.com/" +
-        "http://hollywoodtest3-env.eba-gzbfvjh9.us-west-2.elasticbeanstalk.com/api/v1/movie",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Cache-Control": "no-cache",
-          "User-Agent": "PostmanRuntime/7.26.7",
-          Accept: "*/*",
-          "Accept-Encoding": "gzip, deflate, br",
-          Connection: "keep-alive",
-        },
-        body: JSON.stringify({ movieTitle: this.state.movieTitle }),
-      }
-    )
-      .then((response) => console.log(response))
-      .catch((error) => {
-        console.log(error);
-      });
+  handleSubmit = async () => {
+    await axios
+      .post("/api/v1/movie", JSON.stringify({ movieTitle: this.state.movieTitle }))
+      .then((response) => {
+        console.log(response);
+        return response.json;
+      })
+      .then((data) => {
+        this.setState({
+          showMovie: true,
+          movie: {
+            country: data.Country,
+            genre: data.Genre,
+            poster: data.Poster,
+            rated: data.Rated,
+            title: data.Title,
+            type: data.Type,
+            year: data.Year,
+            imdbRating: data.imdbRating,
+          },
+        });
+      })
+      .catch((err) => {
+        console.log("Error:", err);
+        });
   };
 
   render() {
