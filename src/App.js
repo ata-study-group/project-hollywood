@@ -1,14 +1,12 @@
 import React from "react";
 import "./App.css";
-import GameContainer from "./containers/GameContainer.js";
+import Lobby from "./components/Lobby.js";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <header className="App-header"></header>
-      <GameContainer />
+      <Lobby/>
     </div>
   );
 }
-
-export default App;
