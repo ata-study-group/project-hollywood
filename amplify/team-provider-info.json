@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-projecthollywood2-dev-153910-authRole",
+      "UnauthRoleArn": "arn:aws:iam::224934012676:role/amplify-projecthollywood2-dev-153910-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::224934012676:role/amplify-projecthollywood2-dev-153910-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-projecthollywood2-dev-153910-deployment",
+      "UnauthRoleName": "amplify-projecthollywood2-dev-153910-unauthRole",
+      "StackName": "amplify-projecthollywood2-dev-153910",
+      "StackId": "arn:aws:cloudformation:us-west-2:224934012676:stack/amplify-projecthollywood2-dev-153910/ed3fae80-17c2-11eb-ae36-02ce33164a31",
+      "AmplifyAppId": "d1qdgxv67ea2mw"
+    }
+  }
+}
