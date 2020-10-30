@@ -4,6 +4,7 @@ import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import { axios } from "../axios.js"
 import Game from "./Game.js"
+import Header from "./Header.js";
 
 export default function Lobby() {
     const [playerName, setPlayerName] = useState("");
@@ -54,6 +55,7 @@ export default function Lobby() {
     }
 
     return <div>
+        {!nameSubmitted && <Header /> }
         {!nameSubmitted &&
             <Form onSubmit={(e)=>{
                 e.preventDefault();
