@@ -11,7 +11,7 @@ function Header() {
             <div className="row">
                 <div className="col align-self-center">
                     <Image
-                        src={require('/Users/olafschw/IdeaProjects/project-hollywood2/src/logo.png')}
+                        src={require('../logo.png')}
                         alt="Logo"
                         style={ style }
                     />
